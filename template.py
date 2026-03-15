@@ -7,8 +7,8 @@ project_name= 'medicine_review'
 logging.basicConfig(level=logging.INFO) 
 
 list_of_files = [
-     f"artifacts/",
-    f"notebooks/",
+    "artifacts/",
+    "notebooks/",
     f"src/{project_name}/component/__init__.py",
     f"src/{project_name}/component/data_ingestion.py",
     f"src/{project_name}/component/data_transformation.py",
@@ -28,16 +28,18 @@ list_of_files = [
     "requirements.txt",
 ]
 
-for file_path in list_of_files: 
-    filepath = Path(file_path)
+for filepath in list_of_files: 
+    filepath = Path(filepath)
     filedir,filename = os.path.split(filepath) 
+    # print(filedir)
 
     if filedir !='':
         os.makedirs(filedir,exist_ok=True) 
         logging.info(f"Creating filedir {filedir} and filename is {filename}")
     
     if (not os.path.exists(filepath) or (os.path.getsize(filepath)==0)):
-        pass 
-        logging.info(f"creating empty file {filepath}") 
+        with open(filepath,'w') as file:
+            pass 
+            logging.info(f"creating empty file {filepath}") 
     else:
         logging.info(f"Filename {filename} has been already creadted..")

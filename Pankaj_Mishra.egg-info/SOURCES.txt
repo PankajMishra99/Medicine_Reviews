@@ -1,0 +1,7 @@
+README.md
+setup.py
+Pankaj_Mishra.egg-info/PKG-INFO
+Pankaj_Mishra.egg-info/SOURCES.txt
+Pankaj_Mishra.egg-info/dependency_links.txt
+Pankaj_Mishra.egg-info/requires.txt
+Pankaj_Mishra.egg-info/top_level.txt
