@@ -124,7 +124,7 @@ pip install -r requirements.txt
 ### Run training pipeline
 
 ```
-python src/medicine_review/model_trainer.py
+python src/medicine_review/component/model_trainer.py
 ```
 
 ### Run application
