@@ -1,0 +1,4 @@
+[2026-03-26 06:22:18,970] 9s INFO - Program excuted..
+[2026-03-26 06:22:24,588] 27s INFO - Read train data successfully in ingestion file..
+[2026-03-26 06:22:26,173] 29s INFO - Read test data sucessfully in  ingestion file..
+[2026-03-26 06:23:32,309] 49s INFO - raw data saved successfully..

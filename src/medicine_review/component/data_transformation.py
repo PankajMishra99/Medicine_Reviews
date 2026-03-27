@@ -13,7 +13,7 @@ from sklearn.pipeline import Pipeline
 
 @dataclass 
 class DataTransformationConfig:
-    model_transformation_config_path = os.path.join(os.getcwd(),'atrifacts','preprocess.pkl')
+    model_transformation_config_path = os.path.join(os.getcwd(),'artifacts','preprocess.pkl')
 
 class DataTransformation:
     def __init__(self):
@@ -23,7 +23,11 @@ class DataTransformation:
         try:
             pipeline = Pipeline(
                 steps=[
-                    ('tfidf',TfidfVectorizer(max_features=1000))
+                    ('tfidf',TfidfVectorizer(max_features=1000,
+                    stop_words='english',
+                    ngram_range=(1,2),
+                    lowercase=True
+                    ))
                 ]
             )
             return pipeline

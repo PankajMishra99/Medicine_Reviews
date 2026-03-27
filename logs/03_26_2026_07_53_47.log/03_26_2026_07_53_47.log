@@ -1,0 +1,8 @@
+[2026-03-26 07:53:51,821] 9s INFO - Program excuted..
+[2026-03-26 07:53:52,672] 27s INFO - Read train data successfully in ingestion file..
+[2026-03-26 07:53:52,859] 29s INFO - Read test data sucessfully in  ingestion file..
+[2026-03-26 07:54:14,525] 51s INFO - raw data saved successfully..
+[2026-03-26 07:54:15,237] 40s INFO - Read train data successfully..
+[2026-03-26 07:54:15,404] 42s INFO - Read test data successfully..
+[2026-03-26 07:54:42,947] 27s INFO - Model saved successfull..
+[2026-03-26 07:54:44,569] 45s INFO - Vectorization for user review done successfully..
